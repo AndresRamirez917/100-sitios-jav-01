@@ -1,0 +1,278 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+/* reset */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+/* tamaño de las fuentes */
+
+h1 {
+    font-size: 2.5rem;
+}
+
+h2 {
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+
+h3 {
+    font-size: 1.25rem;
+}
+
+h4 {
+    font-size: 1.5rem;
+}
+
+h5 {
+    font-size: 1.5rem;
+}
+
+h5 {
+    font-size: 1rem;
+}
+
+/* margen y grosor de la fuente */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin-bottom: 15px;
+    font-weight: 500;
+}
+
+img {
+    max-width: 100%;
+}
+
+p {
+    font-size: 1rem;
+    margin: 10px 0;
+    line-height: 1.7em;
+    font-weight: 300;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 30px;
+}
+
+.btn {
+    display: inline-block;
+    font-size: 12px;
+    text-transform: uppercase;
+    padding: 10px 25px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    border: none;
+}
+
+.btn-dark {
+    background-color: black;
+    color: white;
+}
+
+.bg-light {
+    background-color: rgb(226, 76, 181);
+}
+
+.bg-dark {
+    background-color: black;
+    color: white;
+}
+
+.link-dark{
+    color: white;
+}
+
+a {
+    color: white;
+}
+
+.txt-small {
+    font-size: 12px;
+}
+
+.txt-white {
+    color: white;
+}
+
+.flex {
+    display: flex;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3,1);
+    grid-auto-rows: minmax(400px, auto);
+}
+
+/* navbar */
+#navbar {
+    padding: 15px 0;
+}
+
+#navbar .logo img {
+    height: 30px;
+}
+
+#navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+#navbar ul {
+    display: flex;
+}
+
+#navbar ul li  {
+    list-style: none;
+    padding: 20px 10px;
+    color: white;
+    text-transform: uppercase;
+}
+
+#navbar ul li a {
+    font-size: 14px;
+    font-weight: 400px;
+    
+}
+
+/* photography */
+
+.grid-box-1 {
+    grid-column: 1/3;
+    grid-row: 1/2;
+}
+
+
+.grid-box-2 {
+    grid-column: 3/4;
+    grid-row: 1;
+    background: url("images/showcase-1.jpg");
+}
+
+
+.grid-box-3 {
+    grid-column: 1/3;
+    grid-row: 2;
+    background: url("images/showcase-2.jpg");
+}
+
+
+.grid-box-4 {
+    grid-column: 3/4;
+    grid-row: 2;
+}
+
+
+.grid-box-5 {
+    grid-column: 1/3;
+    grid-row: 3;
+}
+
+
+.grid-box-6 {
+    grid-column: 3/4;
+    grid-row: 3;
+    background: url("images/showcase-3.jpg");
+}
+
+.grid-box-2, .grid-box-3, .grid-box-6 {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.grid-box-1, 
+.grid-box-4,
+.grid-box-5 {
+    padding: 80px 70px;
+}
+
+/* stories */
+
+#stories .stories-box {
+	flex: 1;
+	height: 450px;
+	padding: 300px 30px 30px 30px;
+    background-repeat:no-repeat ;
+    background-position: center;
+    background-size: cover;
+
+}
+
+.stories-box-1 {
+	background: url(/images/stories-mountain.jpg);
+}
+
+.stories-box-2{
+    background: url(/images/stories-building.jpg);
+}
+
+.stories-box-3{
+    background: url(/images/stories-city.jpg);
+}
+
+.stories-box-4{
+    background: url(images/stories-voyage.jpg);
+}
+
+#stories hr {
+    background: white;
+    border: none;
+    height: 1px;
+    margin-bottom: 10px;
+}
+
+/* features */
+
+#features {
+    padding: 50px;
+    text-align: center;
+}
+
+#features img {
+    height: 120px;
+}
+
+#features h4 {
+    padding: 30px 0 10px 0;
+}
+
+#features .flex-box {
+    margin: 20px;
+}
+
+/* main footer */
+
+#mainfooter {
+    padding: 15px 0;
+}
+
+#mainfooter img {
+    height: 30px;
+}
+
+#mainfooter .flex {
+    justify-content: space-between;
+    padding: 30px 0;
+}
