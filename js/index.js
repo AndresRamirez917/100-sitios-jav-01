@@ -23,8 +23,6 @@ const res = await fetch('https://jsonplaceholder.typicode.com/photos/')
          card2.className = "stories.box"
          const card22 = document.createElement('div')
          card22.className = "card22"
-         const card23 = document.createElement('div')
-         card23.className = "card23"
          const title2 = document.createElement('h3')
          title2.textContent = p.title
          const hacher = document.createElement('hr')
@@ -38,7 +36,7 @@ const res = await fetch('https://jsonplaceholder.typicode.com/photos/')
          img2.className = "imagen2"
          img2.src = p.url;
         
-         card2.append(img2, card22, card23)
+         card2.append(img2, card22)
          card22.append(title2, arrow, paragraph)
          stories.append(card2)
       }

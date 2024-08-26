@@ -216,7 +216,6 @@ a {
 }
 
 
-
  .arrow {
    color: #010101;
    text-align: center;
@@ -239,36 +238,11 @@ h3 {
 
 .imagen2 {
   height: 100vh;
-  margin-top: -10px;
+  /* margin-top: -90px; */
   width: 100%;
 }
 
-
-.stories-box-1{
-	/* background: url(/images/stories-mountain.jpg); */
-
-}
-
-.stories-box-2{
-    /* background: url(/images/stories-building.jpg); */
-    width: 300px;
-height: 100px;
-}
-
-.stories-box-3{
-    /* background: url(/images/stories-city.jpg); */
-    width: 300px;
-height: 100px;
-}
-
-.stories-box-4{
-    /* background: url(images/stories-voyage.jpg); */
-    width: 300px;
-height: 100px;
-}
-
 /* features */
-
 #features {
     padding: 50px;
     text-align: center;
