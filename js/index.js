@@ -1,4 +1,6 @@
-const main = document.querySelector('main')
+const main = document.querySelector('#photography')
+const stories = document.querySelector('#stories')
+const montains = "the montains"
 
 async function getData(){
 const res = await fetch('https://jsonplaceholder.typicode.com/photos/')
@@ -6,17 +8,40 @@ const res = await fetch('https://jsonplaceholder.typicode.com/photos/')
     // const dataphotos = photos.results.map(dataPoke => dataPoke.url)
     // console.log(dataphotos)
      photos.forEach ( p => {
-        if (p.id <= 4) {
+        if (p.id <= 3) {
  //código para crear la imagen
          const card = document.createElement('div')
-         const title = document.createElement('h3')
          card.className = "grid-box-img"
          const img = document.createElement('img')
+         img.className = "imagen1"
          img.src = p.url;
-         title.textContent = p.title
          card.append(img)
-         main.append(card)
+         main.append(card) 
         }
+        else if(p.id = 5 && p.id <= 7) {
+         const card2 = document.createElement('div')
+         card2.className = "stories.box"
+         const card22 = document.createElement('div')
+         card22.className = "card22"
+         const card23 = document.createElement('div')
+         card23.className = "card23"
+         const title2 = document.createElement('h3')
+         title2.textContent = p.title
+         const hacher = document.createElement('hr')
+         hacher.className = "hacher"
+         const arrow = document.createElement('a')
+         arrow.className = "arrow"
+         const paragraph = document.createElement('p')
+         arrow.textContent = "__________________________________________"
+         paragraph.textContent = "by John Bryan"
+         const img2 = document.createElement('img')
+         img2.className = "imagen2"
+         img2.src = p.url;
+        
+         card2.append(img2, card22, card23)
+         card22.append(title2, arrow, paragraph)
+         stories.append(card2)
+      }
        
      });
 }
