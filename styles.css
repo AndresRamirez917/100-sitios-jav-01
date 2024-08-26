@@ -157,7 +157,6 @@ a {
 }
 
 /* photography */
-
 .grid-box-img {
     width: 100%;
     height: 150.1%;
@@ -197,19 +196,6 @@ a {
 }
 
 /* stories */
-
-/* #stories .stories-box {
-    width: 90%;
-    margin: 0 auto;
-	flex: 1;
-	height: 450px;
-	padding: 300px 30px 30px 30px;
-    background-repeat:no-repeat ;
-    background-position: center;
-    background-size: cover; 
- 
-} */
-
 #stories .stories-box > img {
     width: 150%;
     height: 90vh;
