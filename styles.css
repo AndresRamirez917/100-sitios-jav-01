@@ -115,6 +115,7 @@ a {
 
 .flex {
     display: flex;
+    flex: 1;
 }
 
 .grid {
